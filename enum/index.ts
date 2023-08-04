@@ -1,21 +1,21 @@
 // ele enumera uam coleção usando os dados mais complexos de forma simples
 
-enum roupa{
+enum roup{
     P='pequeno',
     M='medio',
     G='grande'
 }
 
-const estilo1={
+const estilo3={
     tipo:'oversize',
-    tamanho:roupa.P
+    tamanho:roup.P
 }
 
-console.log(estilo1)
+console.log(estilo3)
 
-const estilo2={
+const estilo={
     tipo:'gola v ',
-    tamanho:roupa.M
+    tamanho:roup.M
 }
 
-console.log(estilo2)
+console.log(estilo)

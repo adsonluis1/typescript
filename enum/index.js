@@ -1,17 +1,17 @@
 // ele enumera uam coleção usando os dados mais complexos de forma simples
-var roupa;
-(function (roupa) {
-    roupa["P"] = "pequeno";
-    roupa["M"] = "medio";
-    roupa["G"] = "grande";
-})(roupa || (roupa = {}));
-var estilo1 = {
+var roup;
+(function (roup) {
+    roup["P"] = "pequeno";
+    roup["M"] = "medio";
+    roup["G"] = "grande";
+})(roup || (roup = {}));
+var estilo3 = {
     tipo: 'oversize',
-    tamanho: roupa.P
+    tamanho: roup.P
 };
-console.log(estilo1);
-var estilo2 = {
+console.log(estilo3);
+var estilo = {
     tipo: 'gola v ',
-    tamanho: roupa.M
+    tamanho: roup.M
 };
-console.log(estilo2);
+console.log(estilo);
