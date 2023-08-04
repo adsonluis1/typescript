@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="btn_nav" id="btn_addAll"></div>
+            <div class="btn_nav" id="btn_removerAll"></div>
+            <div class="btn_nav" id="btn_infoAll"></div>
+        </nav>
+    </header>
+    <main>
+        <section id="section_form">
+            <form id="form_esquerda">
+                <label for="inome">Nome</label>
+                <input type="text" name="" id="inome">
+                <label for="icpf">CPF</label>
+                <input type="text" name="" id="icpf" placeholder="Sem pontuação">
+                <label for="iidade">Idade</label>
+                <input type="number" name="" id="iidade">
+            </form>
+
+            <form id="form_meio">
+                <label for="">Sexo</label>
+                <div id="filho_form">
+                    <input type="radio" name="sexo" id="M">
+                    <label for="m" style="margin-right: 20px;">Masculino</label>
+                    <input type="radio" name="sexo" id="f">
+                    <label for="f">Feminino</label>
+                </div>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="" id="iprof">
+                <label for="isalario">Salário</label>
+                <input type="number" name="" id="isalario">
+            </form>
+
+            <form id="form_direita">
+                <label for="itell">Telefone</label>
+                <input type="number" name="" id="itell" placeholder="ex:(79)999999999">
+                <label for="iemail">Email</label>
+                <input type="email" name="" id="email">
+                <label for="imora">Moradia</label>
+                <input type="text" name="" id="imora">
+            </form>
+
+        </section>
+
+        <section id="section_tela">
+            <div id="info_pessoaias">
+                <div id="filho_info_pessoais">
+                    <aside id="aside_nome">
+
+                        <h1>Informações Pessoais</h1>                        
+                        <p class="tela">Nome: <span id="span_nome">Adson luis</span> </p>                                          
+                        <p class="tela">idade: <span id="span_idade">18</span></p>                    
+                        <p class="tela">Sexo: <span id="span_sexo">Homem</span></p>                   
+                        <p class="tela">Prossisão: <span id="span_prof">Programador</span></p>                     
+                        <p class="tela">Salario: <span id="span_sala">R$3000</span></p> 
+
+                    </aside>
+
+                    <aside id="aside_img">
+
+                        <img id="img_pessoa" src="img/download.jpeg" alt="img_pessoa">
+                    
+                    </aside>
+                </div>
+
+                <button id="bnt_apagar"></button>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

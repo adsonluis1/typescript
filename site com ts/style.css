@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkcyan;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(0, 0, 116);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+}
+
+.btn_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: darkcyan;
+    margin-left: 30px;
+}
+
+#btn_addAll{
+   background-image: url(img/8666546_user_plus_icon.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+#btn_removerAll{
+    background-image: url(img/8666595_x_icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#btn_infoAll{
+    background-image: url(img/8666542_save_icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#section_form{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: rgb(0, 0, 116);
+    padding: 30px 10px 30px 10px;
+}
+
+#form_esquerda{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 33%;
+}
+
+#form_meio{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 33%;
+}
+
+#filho_form{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: -5px;
+}
+
+#form_direita{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+label{
+    margin: 5px 0px 5px 0px;
+}
+
+input{
+    padding: 2px;
+}
+
+#section_tela{
+    background-color: rgb(0, 0, 116);
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+#info_pessoaias{
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+#bnt_apagar{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 70px;
+    height: 25px;
+}
+
+#filho_info_pessoais{
+    display: flex;
+    flex-direction: row;
+}
+
+.tela{
+    margin: 5px 0px 5px 0px;
+}
+
+aside h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tela{
+    font-size: 1.5em;
+}
+
+span{
+    font-size: 1em;
+}
+
+#aside_nome{
+    width: 80%;
+}
+
+#aside_img{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 30px 0px 0px;
+}
+
+#img_pessoa{
+    height: 250px;
+    width: 200px;
+}
+
