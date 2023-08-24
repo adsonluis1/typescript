@@ -13,6 +13,7 @@ const section_form = document.querySelector('#section_form');
 const inome = document.querySelector('#inome');
 const icpf = document.querySelector('#icpf');
 const iidade = document.querySelector('#iidade');
+const isalario = document.querySelector('#isalario');
 // decorator
 function checknome() {
     return function (target, propertyKey) {
@@ -34,26 +35,60 @@ function checknome() {
         });
     };
 }
+function checkcpf_BDD() {
+    return function (target, propertyKey) {
+        let valor;
+        const getter = function () {
+            return valor;
+        };
+        const setter = function (newvalor) {
+            if (bancoDeDados.includes(icpf.value) === false) {
+                valor = newvalor;
+                bancoDeDados.push(newvalor);
+            }
+            else {
+                console.log('nao pode');
+                console.log(newvalor);
+            }
+        };
+        Object.defineProperty(target, propertyKey, {
+            set: setter,
+            get: getter
+        });
+    };
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 btn_addAll?.addEventListener('click', (btn) => {
     section_form.style.display = 'flex';
 });
 btn_infoAll?.addEventListener('click', () => {
+    console.log(bancoDeDados);
     class Pessoa {
-        // sexo
-        // profissão
-        // salario
         // telefone
         // email
         // moradia
         // id
-        constructor(nome, cpf, idade) {
-            this.nome = nome;
-            this.cpf = cpf;
-            this.idade = idade;
+        constructor(objpessoa) {
+            this.nome = objpessoa.nome;
+            this.cpf = objpessoa.cpf;
+            this.idade = objpessoa.idade;
+            this.salario = objpessoa.salario;
+        }
+        show() {
+            console.log(`nome= ${this.nome}`);
+            console.log(`cpf= ${this.cpf}`);
+            console.log(`idade= ${this.idade}`);
+            console.log(ShowFolhaSalarial(this));
         }
     }
     __decorate([
-        checknome()
-    ], Pessoa.prototype, "nome", void 0);
-    console.log(new Pessoa(inome.value, icpf.value, iidade.value));
+        checkcpf_BDD()
+    ], Pessoa.prototype, "cpf", void 0);
+    new Pessoa({ nome: inome.value, idade: iidade.value, cpf: icpf.value, salario: isalario.value }).show();
 });
+const bancoDeDados = [];
+let folhaSalarial = 0;
+function ShowFolhaSalarial(obj) {
+    folhaSalarial += Number(obj.salario);
+    return folhaSalarial;
+}
