@@ -1,3 +1,4 @@
+"use strict";
 ;
 // o ? no altura e idade serve para dizer que ele nn é necessário 
 function hehe(par) {

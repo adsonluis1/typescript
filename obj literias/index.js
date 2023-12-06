@@ -1,7 +1,8 @@
+"use strict";
 // crinado obs literias
-var obj = {
+const obj = {
     nome: 'adson',
     idade: 18
 };
 console.log(obj.nome);
-console.log(obj.idade); 
+console.log(obj.idade);

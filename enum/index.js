@@ -1,3 +1,4 @@
+"use strict";
 // ele enumera uam coleção usando os dados mais complexos de forma simples
 var roup;
 (function (roup) {
@@ -5,12 +6,12 @@ var roup;
     roup["M"] = "medio";
     roup["G"] = "grande";
 })(roup || (roup = {}));
-var estilo3 = {
+const estilo3 = {
     tipo: 'oversize',
     tamanho: roup.P
 };
 console.log(estilo3);
-var estilo = {
+const estilo = {
     tipo: 'gola v ',
     tamanho: roup.M
 };

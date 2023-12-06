@@ -1,3 +1,4 @@
+"use strict";
 function somar(a, b) {
     return a + b;
 }
@@ -9,5 +10,5 @@ function somar2(c, d) {
 ;
 console.log(somar2(10, 30));
 function semretorno() {
-    var constante = 'adson';
+    const constante = 'adson';
 }

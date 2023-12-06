@@ -1,5 +1,6 @@
+"use strict";
 ;
-var pessoa = {
+const pessoa = {
     nome: 'adson',
     idade: 18,
     altura: 1.70,

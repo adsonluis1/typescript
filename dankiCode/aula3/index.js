@@ -1,27 +1,27 @@
-var Pessoa = /** @class */ (function () {
-    function Pessoa() {
+"use strict";
+class Pessoa {
+    constructor() {
         this.nome = 'adson';
         this.idade = 18;
     }
-    Pessoa.prototype.getNome = function () {
-        console.log("nome = ".concat(this.nome));
-    };
-    Pessoa.prototype.getIdada = function () {
-        console.log("idade = ".concat(this.idade));
-    };
-    Pessoa.prototype.getFull = function () {
-        console.log("nome=".concat(this.nome, ", idade=").concat(this.idade));
-    };
-    Pessoa.prototype.setNome = function (nome) {
+    getNome() {
+        console.log(`nome = ${this.nome}`);
+    }
+    getIdada() {
+        console.log(`idade = ${this.idade}`);
+    }
+    getFull() {
+        console.log(`nome=${this.nome}, idade=${this.idade}`);
+    }
+    setNome(nome) {
         this.nome = nome;
-        console.log("nome alterado para ".concat(this.nome));
-    };
-    Pessoa.prototype.setIdade = function (idade) {
+        console.log(`nome alterado para ${this.nome}`);
+    }
+    setIdade(idade) {
         this.idade = idade;
-        console.log("idade alterada para ".concat(this.idade));
-    };
-    return Pessoa;
-}());
+        console.log(`idade alterada para ${this.idade}`);
+    }
+}
 new Pessoa().getNome();
 new Pessoa().getIdada();
 new Pessoa().getFull();

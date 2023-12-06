@@ -1,3 +1,4 @@
+"use strict";
 function helloword() {
     return 2;
 }
